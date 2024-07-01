@@ -1,0 +1,227 @@
+/* fonts */
+
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('/fonts/open-sans-v29-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/open-sans-v29-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('/fonts/open-sans-v29-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/open-sans-v29-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('/fonts/open-sans-v29-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/open-sans-v29-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('/fonts/open-sans-v29-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/open-sans-v29-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* basic */
+
+:root {
+  --background-site: #f5f5f5;
+  --light-grey: #DBDBDB;
+  --grey: #6D7073;
+  --dark-grey: #2E3337;
+  --blue: #85D6FF;
+  --dark-blue: #004094;
+  --light-red: #FF7575;
+  --red: #da5252;
+  --dark-red: #D60000;
+  --white: #ffffff;
+  --dark-white: #FEFCF6;
+  --yellow: #FFFF00;
+
+  --border-solid-grey: 8px solid #2E3337;
+  --border-dotted-light-grey: 4px dotted #dbdbdbab;
+  --border-dotted-grey: 4px dotted #6D7073;
+  --border-dotted-dark-grey: 4px dotted #2E3337;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background-site);
+}
+
+main {
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: var(--grey);
+}
+
+/* main */
+
+.section-404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--light-grey);
+}
+
+.section-404__img-404-wrapper,
+.section-404__description-404 {
+  width: 100%;
+  max-width: 450px;
+  height: 50%;
+}
+
+.section-404__img-404-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.description-404__heading {
+  margin-bottom: 30px;
+  font-size: 19px;
+  line-height: 120%;
+  font-weight: 700;
+  text-align: center;
+  color: var(--dark-red);
+}
+
+.description-404__comment {
+  margin-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  text-align: center;
+  color: var(--dark-grey);
+}
+
+.description-404__comment > span {
+  color: var(--dark-blue);
+}
+
+.description-404__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  width: 220px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+  color: var(--dark-grey);
+  background-color: var(--blue);
+  outline: 1px solid var(--dark-grey);
+  outline-offset: -1px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+/* .description-404__btn:hover {
+  background-color: var(--light-red);
+  color: var(--white);
+} */
+
+/* .description-404__btn:active {
+  background-color: var(--red);
+  color: var(--white);
+} */
+
+/* @media *//* @media *//* @media *//* @media */
+/* @media *//* @media *//* @media *//* @media */
+/* @media *//* @media *//* @media *//* @media */
+
+@media (min-width:1200px) {   /* :hover and :active для desktop */
+
+  .description-404__btn:hover {
+    background-color: var(--light-red);
+    color: var(--white);
+  }
+
+  .description-404__btn:active {
+    background-color: var(--red);
+    color: var(--white);
+  }
+
+}
+
+@media (max-width:1199.98px) {   /* :active для mobile */
+
+  .description-404__btn:active {
+    background-color: var(--red);
+    color: var(--white);
+  }
+
+}
+
+@media (min-width:320px) and (max-width: 480px) {
+
+  /* main */
+
+  .description-404__comment {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+@media (min-width:320px) and (max-width: 370px) {
+
+  /* main */
+
+  .description-404__btn {
+    width: 100%;
+  }
+
+}

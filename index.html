@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifts &amp; Escalators</title>
+  <link rel="stylesheet" href="/le-site/css/normalize.css">
+  <link rel="stylesheet" href="/le-site/css/styles.css">
+  <link rel="shortcut icon" href="/le-site/icons/favicon.ico" type="image/x-icon">
+  <script defer src="/le-site/js/burger-menu.js"></script> <!-- Бургер-меню (<768 px) -->
+  <script defer src="/le-site/js/smooth-site-transition.js"></script> <!-- Плавный переход по странице из меню -->
+  <script defer src="/le-site/js/smooth-appearance-blocks.js"></script> <!-- Плавное появление содержимого при пролистывании сайта -->
+  <script defer src="/le-site/js/slider.js"></script> <!-- Слайдер автоматический (section-slider) -->
+  <script defer src="/le-site/js/line-clamp-services.js"></script> <!-- Открыть/скрыть текст (section-services) -->
+  <script defer src="/le-site/js/line-clamp-about.js"></script> <!-- Открыть/скрыть текст (section-about) -->
+  <script defer src="/le-site/js/flipping-objects.js"></script> <!-- Перелистывать объекты (section-about) -->
+  <script defer src="/le-site/js/flipping-clients.js"></script> <!-- Перелистывать клиентов (section-about) -->
+  <script defer src="/le-site/js/faq-accordeon.js"></script> <!-- Аккордеон (FAQ) -->
+  <script defer src="/le-site/js/scroll-up-button.js"></script> <!-- Кнопка-стрелка для возврата вверх к меню -->
+  <script defer src="/le-site/js/modal-window.js"></script> <!-- Модальное окно (section-form) -->
+</head>
+<body>
+  <!-- header -->
+  <header class="header" id="header-site">
+    <div class="container header__container">
+      <!-- header__top-line -->
+      <div class="header__top-line">
+        <a href="#" class="logo-container top-line__logo-container" title="Данный сайт не является коммерческим проектом, а является результатом самостоятельной учебной работы при изучении курса вебразработки. Марка «Lifts & Escalators», контактные данные и реквизиты компании, условия работы с компанией, а также все прочие условия и обстоятельства, представленные на сайте, носят исключительно информационный характер и являются частью общего вымышленного контента (любые совпадения с реальными лицами, проектами и с прочими обстоятельствами случайны).">
+          <img src="icons/logo-top.svg" alt="Логотип компании" class="logo header-logo">
+        </a>
+        <!-- header__nav -->
+        <nav class="header__nav">
+          <!-- header__nav-menu (>768 px) -->
+          <ul class="nav__menu">
+            <li class="menu__item">
+              <a href="#nav-link-1" class="menu__item-link" data-name="nav-link">
+                Услуги
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#nav-link-2" class="menu__item-link" data-name="nav-link">
+                О компании
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#nav-link-3" class="menu__item-link" data-name="nav-link">
+                FAQ
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#nav-link-4" class="menu__item-link" data-name="nav-link">
+              Консультация
+            </a>
+            </li>
+            <li class="menu__item">
+              <a href="#nav-link-5" class="menu__item-link" data-name="nav-link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <!-- burger-menu-btn -->
+          <div class="burger-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- header__burger-menu (<767 px) -->
+          <ul class="nav__burger-menu">
+            <li class="burger-menu__item">
+              <a href="#nav-link-1" class="burger-menu__item-link" data-name="nav-link">
+                Услуги
+              </a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#nav-link-2" class="burger-menu__item-link" data-name="nav-link">
+                О компании
+              </a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#nav-link-3" class="burger-menu__item-link" data-name="nav-link">
+                FAQ
+              </a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#nav-link-4" class="burger-menu__item-link" data-name="nav-link">
+              Консультация
+            </a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#nav-link-5" class="burger-menu__item-link" data-name="nav-link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- main -->
+  <main class="main">
+    <!-- section-slider -->
+    <section class="section-slider">
+      <div class="container section-slider__container">
+        <ul class="slides">
+          <li class="slide slide-visible"></li>
+          <li class="slide"></li>
+          <li class="slide"></li>
+        </ul>
+      </div>
+    </section>
+    <!-- section-services -->
+    <section class="section-services" id="nav-link-1">
+      <div class="container section-services__container">
+        <h1 class="section-heading section-services__heading smooth-block">
+          Какие услуги мы оказываем
+        </h1>
+        <ul class="section-services__list-services smooth-block">
+          <!-- design -->
+          <li class="list-services__item smooth-block" id="services-design">
+            <h2 class="item-heading list-services__item-heading">
+              Проектирование
+            </h2>
+            <img src="img/service-1.jpg" alt="Проектирование" class="list-services__item-img"> <!-- Изображение с сайта: Pixabay.com (свободное использование) 2022 г. -->
+            <p class="list-services__item-description section-description list-services__item-description_line-clamp">
+              Презентационный материал, на первый взгляд, транслирует метод изучения рынка. Ретроконверсия национального наследия, отбрасывая подробности, последовательно уравновешивает стратегический рекламный клаттер. Имидж, на первый взгляд, программирует фактор коммуникации. Стратегический рыночный план спонтанно позиционирует conversion rate. Согласно ставшей уже классической работе Филипа Котлера, лидерство в продажах усиливает комплексный анализ ситуации.
+            </p>
+            <div class="btn-more list-services__btn-more">
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+          <!-- building -->
+          <li class="list-services__item smooth-block" id="services-building">
+            <h2 class="item-heading list-services__item-heading">
+              Строительство
+            </h2>
+            <img src="img/service-2.jpg" alt="Строительство" class="list-services__item-img"> <!-- Изображение с сайта: Pixabay.com (свободное использование) 2022 г. -->
+            <p class="list-services__item-description section-description list-services__item-description_line-clamp">
+              Как предсказывают футурологи организация слубы маркетинга упорядочивает фактор коммуникации. Можно предположить, что медийный канал искажает социометрический фирменный стиль. До недавнего времени считалось, что построение бренда вполне выполнимо. Стоит отметить, что диверсификация бизнеса отталкивает креативный поведенческий таргетинг, опираясь на опыт западных коллег. Поисковая реклама существенно притягивает conversion rate.
+            </p>
+            <div class="btn-more list-services__btn-more">
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+          <!-- montage -->
+          <li class="list-services__item smooth-block" id="services-montage">
+            <h2 class="item-heading list-services__item-heading">
+              Монтаж
+            </h2>
+            <img src="img/service-3.jpg" alt="Монтаж" class="list-services__item-img"> <!-- Изображение с сайта: Pixabay.com (свободное использование) 2022 г. -->
+            <p class="list-services__item-description section-description list-services__item-description_line-clamp">
+              Рыночная информация ускоряет эмпирический маркетинг. Итак, ясно, что стимулирование сбыта определяет потребительский рынок. Сущность и концепция маркетинговой программы вырождена. Согласно предыдущему, процесс стратегического планирования однородно масштабирует стратегический BTL. Анализ зарубежного опыта многопланово стабилизирует эксклюзивный BTL, оптимизируя бюджеты. Продвижение проекта недостижимо.
+            </p>
+            <div class="btn-more list-services__btn-more">
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+          <!-- service -->
+          <li class="list-services__item smooth-block" id="services-service">
+            <h2 class="item-heading list-services__item-heading">
+              Обслуживание
+            </h2>
+            <img src="img/service-4.jpg" alt="Обслуживание" class="list-services__item-img"> <!-- Изображение с сайта: Pixabay.com (свободное использование) 2022 г. -->
+            <p class="list-services__item-description section-description list-services__item-description_line-clamp">
+              Согласно предыдущему, ребрендинг индуцирует институциональный BTL. Дело в том, что таргетирование отражает потребительский рынок. Не факт, что жизненный цикл продукции основан на опыте повседневного применения. Поэтому стимулирование сбыта детерминирует конвергентный баинг и селлинг. Анализ зарубежного опыта, пренебрегая деталями, основан на тщательном анализе. Согласно предыдущему, корпоративная культура индуктивно отражает институциональный потребительский рынок.
+            </p>
+            <div class="btn-more list-services__btn-more">
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+        </ul>
+        <div class="border-container_solid smooth-block"></div>
+      </div>
+    </section>
+    <!-- section-about -->
+    <section class="section-about" id="nav-link-2">
+      <div class="container section-about__container">
+        <h1 class="section-heading section-about__heading smooth-block">
+          О компании
+        </h1>
+        <ul class="section-about__list-about smooth-block">
+          <!-- company -->
+          <li class="list-about__item smooth-block" id="about-company">
+            <h2 class="item-heading list-about__item-heading">
+              Наша компания
+            </h2>
+              <div class="list-about__company">
+                <img src="img/company.jpg" alt="Наша компания" class="list-about__company-img"> <!-- Изображение с сайта: Pixabay.com (свободное использование) 2022 г. -->
+                <p class="list-about__company-text section-description list-about__company-text_line-clamp" data-name="company-text">
+                  Продвижение проекта, безусловно, как всегда непредсказуемо. Таргетирование уравновешивает бренд. Таргетирование отталкивает рекламный бриф. Осведомленность о бренде развивает процесс стратегического планирования, признавая определенные рыночные тенденции. Рекламная заставка без оглядки на авторитеты однообразно транслирует медийный канал. Анализ зарубежного опыта, пренебрегая деталями, основан на тщательном анализе. Согласно предыдущему, корпоративная культура индуктивно отражает институциональный потребительский рынок.
+                </p>
+              </div>
+            <div class="btn-more list-about__btn-more" data-name="company-btn-more">
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+          <!-- objects -->
+          <li class="list-about__item smooth-block" id="about-objects">
+            <h2 class="item-heading list-about__item-heading">
+              Наши объекты
+            </h2>
+            <!-- objects-list-screens-screen-more-576 -->
+            <div class="list-about__objects-container box" data-name="objects-list-screen-more-576">
+              <!-- objects-list-1 -->
+              <div class="list-about__objects-list" data-name="objects-list">
+                <div class="list-about__objects-row">
+                  <div class="list-about__objects-img">
+                    <img src="img/object-3.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                  </div>
+                  <div class="list-about__objects-description">
+                    <strong class="list-about__objects-description-heading">Москва-сити</strong>
+                    <p class="list-about__objects-text list-about__objects-text_location">
+                      Москва. 2017 год.
+                    </p>
+                    <p class="list-about__objects-text">
+                      Монтаж лифтов и эскалаторов
+                    </p>
+                  </div>
+                </div>
+                <div class="list-about__objects-row">
+                  <div class="list-about__objects-img">
+                    <img src="img/object-4.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                  </div>
+                  <div class="list-about__objects-description">
+                    <strong class="list-about__objects-description-heading">МГУ им. Ломоносова</strong>
+                    <p class="list-about__objects-text list-about__objects-text_location">
+                      Москва. 2017 год.
+                    </p>
+                    <p class="list-about__objects-text">
+                      Замена лифтов
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- objects-list-2 -->
+              <div class="list-about__objects-list" data-name="objects-list">
+                <div class="list-about__objects-row">
+                  <div class="list-about__objects-img">
+                    <img src="img/object-2.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                  </div>
+                  <div class="list-about__objects-description">
+                    <strong class="list-about__objects-description-heading">Московский Кремль</strong>
+                    <p class="list-about__objects-text list-about__objects-text_location">
+                      Москва. 2015 год.
+                    </p>
+                    <p class="list-about__objects-text">
+                      Монтаж подъёмника
+                    </p>
+                  </div>
+                </div>
+                <div class="list-about__objects-row">
+                  <div class="list-about__objects-img">
+                    <img src="img/object-1.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                  </div>
+                  <div class="list-about__objects-description">
+                    <strong class="list-about__objects-description-heading">Эрмитаж</strong>
+                    <p class="list-about__objects-text list-about__objects-text_location">
+                      Санкт-Петербург. 2016 год.
+                    </p>
+                    <p class="list-about__objects-text">
+                      Монтаж лифта и подъёмника
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- objects-list-3 -->
+              <div class="list-about__objects-list" data-name="objects-list">
+                <div class="list-about__objects-row">
+                  <div class="list-about__objects-img">
+                    <img src="img/object-5.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                  </div>
+                  <div class="list-about__objects-description">
+                    <strong class="list-about__objects-description-heading">Газпром Арена</strong>
+                    <p class="list-about__objects-text list-about__objects-text_location">
+                      Санкт-Петербург. 2018 год.
+                    </p>
+                    <p class="list-about__objects-text">
+                      Монтаж лифта
+                    </p>
+                  </div>
+                </div>
+                <div class="list-about__objects-row">
+                  <div class="list-about__objects-img">
+                    <img src="img/object-6.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                  </div>
+                  <div class="list-about__objects-description">
+                    <strong class="list-about__objects-description-heading">Храм Христа Спасителя</strong>
+                    <p class="list-about__objects-text list-about__objects-text_location">
+                      Москва. 2018 год.
+                    </p>
+                    <p class="list-about__objects-text">
+                      Замена подъемника
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-about__objects-container box" data-name="objects-list-screen-less-576">
+              <!-- objects-list-1 -->
+              <div class="list-about__objects-list_less-576" data-name="objects-list-less-576">
+                <div class="list-about__objects-img">
+                  <img src="img/object-3.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                </div>
+                <div class="list-about__objects-description">
+                  <strong class="list-about__objects-description-heading">Москва-сити</strong>
+                  <p class="list-about__objects-text list-about__objects-text_location">
+                    Москва. 2017 год.
+                  </p>
+                  <p class="list-about__objects-text">
+                    Монтаж лифтов и эскалаторов
+                  </p>
+                </div>
+              </div>
+              <!-- objects-list-2 -->
+              <div class="list-about__objects-list_less-576" data-name="objects-list-less-576">
+                <div class="list-about__objects-img">
+                  <img src="img/object-4.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                </div>
+                <div class="list-about__objects-description">
+                  <strong class="list-about__objects-description-heading">МГУ им. Ломоносова</strong>
+                  <p class="list-about__objects-text list-about__objects-text_location">
+                    Москва. 2017 год.
+                  </p>
+                  <p class="list-about__objects-text">
+                    Замена лифтов
+                  </p>
+                </div>
+              </div>
+              <!-- objects-list-3 -->
+              <div class="list-about__objects-list_less-576" data-name="objects-list-less-576">
+                <div class="list-about__objects-img">
+                  <img src="img/object-2.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                </div>
+                <div class="list-about__objects-description">
+                  <strong class="list-about__objects-description-heading">Московский Кремль</strong>
+                  <p class="list-about__objects-text list-about__objects-text_location">
+                    Москва. 2015 год.
+                  </p>
+                  <p class="list-about__objects-text">
+                    Монтаж подъёмника
+                  </p>
+                </div>
+              </div>
+              <!-- objects-list-4 -->
+              <div class="list-about__objects-list_less-576" data-name="objects-list-less-576">
+                <div class="list-about__objects-img">
+                  <img src="img/object-1.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                </div>
+                <div class="list-about__objects-description">
+                  <strong class="list-about__objects-description-heading">Эрмитаж</strong>
+                  <p class="list-about__objects-text list-about__objects-text_location">
+                    Санкт-Петербург. 2016 год.
+                  </p>
+                  <p class="list-about__objects-text">
+                    Монтаж лифта и подъёмника
+                  </p>
+                </div>
+              </div>
+              <!-- objects-list-5 -->
+              <div class="list-about__objects-list_less-576" data-name="objects-list-less-576">
+                <div class="list-about__objects-img">
+                  <img src="img/object-5.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                </div>
+                <div class="list-about__objects-description">
+                  <strong class="list-about__objects-description-heading">Газпром Арена</strong>
+                  <p class="list-about__objects-text list-about__objects-text_location">
+                    Санкт-Петербург. 2018 год.
+                  </p>
+                  <p class="list-about__objects-text">
+                    Монтаж лифта
+                  </p>
+                </div>
+              </div>
+              <!-- objects-list-6 -->
+              <div class="list-about__objects-list_less-576" data-name="objects-list-less-576">
+                <div class="list-about__objects-img">
+                  <img src="img/object-6.jpg" alt="Объект" class="object-img"> <!-- Изображение с сайта: Википедия (Wikipedia) (общественное достояние) 2022 г. -->
+                </div>
+                <div class="list-about__objects-description">
+                  <strong class="list-about__objects-description-heading">Храм Христа Спасителя</strong>
+                  <p class="list-about__objects-text list-about__objects-text_location">
+                    Москва. 2018 год.
+                  </p>
+                  <p class="list-about__objects-text">
+                    Замена подъемника
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="list-about__objects-btn-container">
+              <div class="btn-flipping btn-previous" data-name="objects-btn-previous">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="btn-flipping btn-next" data-name="objects-btn-next">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </li>
+          <!-- clients -->
+          <li class="list-about__item list-about__item-clients smooth-block" id="about-clients">
+            <h2 class="item-heading list-about__item-heading">
+              Наши заказчики
+            </h2>
+            <div class="list-about__clients-container box">
+              <!-- clients-list-1 -->
+              <div class="list-about__clients-list">
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-1.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-2.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-3.svg" alt="Логотип заказчика" class="client-icon client-icon-fix">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-4.svg" alt="Логотип заказчика" class="client-icon client-icon-fix">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-5.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-6.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-7.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-8.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-9.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+              </div>
+              <!-- clients-list-2 -->
+              <div class="list-about__clients-list">
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-10.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-11.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-12.svg" alt="Логотип заказчика" class="client-icon client-icon-fix">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-13.svg" alt="Логотип заказчика" class="client-icon client-icon-fix">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-14.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-15.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-16.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-17.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+                <div class="list-about__clients-item">
+                  <a href="page-404.html" class="list-about__clients-img">
+                    <img src="img/client-18.svg" alt="Логотип заказчика" class="client-icon">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="list-about__clients-btn-container">
+              <div class="btn-flipping btn-previous" data-name="clients-btn-previous">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="btn-flipping btn-next" data-name="clients-btn-next">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="border-container_dotted smooth-block"></div>
+      </div>
+    </section>
+    <!-- section-advantages -->
+    <section class="section-advantages" id="advantages">
+      <div class="container section-advantages__container">
+        <h2 class="item-heading list-about__item-heading smooth-block">
+          Наши преимущества
+        </h2>
+        <ul class="section-advantages__list-advantages smooth-block">
+          <!-- advantage-1 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/free-icons/best" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Freepik - Flaticon -->
+              <img src="img/advantage-1.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              20-летний опыт успешной работы
+            </p>
+          </li>
+          <!-- advantage-2 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/free-icons/key" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Freepik - Flaticon -->
+              <img src="img/advantage-2.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              Выполнение работы под ключ
+            </p>
+          </li>
+          <!-- advantage-3 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/free-icons/architect" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Konkapp - Flaticon -->
+              <img src="img/advantage-3.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              Высокая квалификация специалистов
+            </p>
+          </li>
+          <!-- advantage-4 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/ru/free-icons/" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Freepik - Flaticon -->
+              <img src="img/advantage-4.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              Обширная география деятельности
+            </p>
+          </li>
+          <!-- advantage-5 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/free-icons/certificate" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Smashicons - Flaticon -->
+              <img src="img/advantage-5.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              Менеджмент контроля качества
+            </p>
+          </li>
+          <!-- advantage-6 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/ru/free-icons" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Freepik - Flaticon -->
+              <img src="img/advantage-6.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              Гибкие договорные условия
+            </p>
+          </li>
+          <!-- advantage-7 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/free-icons/best" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Freepik - Flaticon -->
+              <img src="img/advantage-7.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              Парк собственной техники
+            </p>
+          </li>
+          <!-- advantage-8 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/free-icons/people" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Vitaly Gorbachev - Flaticon -->
+              <img src="img/advantage-8.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              Сотни довольных клиентов
+            </p>
+          </li>
+          <!-- advantage-9 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/free-icons/measuring" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Freepik - Flaticon -->
+              <img src="img/advantage-9.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              Бесплатный замер и выезд специалиста
+            </p>
+          </li>
+          <!-- advantage-10 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/free-icons/money/" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Freepik - Flaticon -->
+              <img src="img/advantage-10.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              Наличный и безналичный расчет
+            </p>
+          </li>
+          <!-- advantage-11 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/free-icons/warranty" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: KP Arts - Flaticon -->
+              <img src="img/advantage-11.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              100% гарантия качества на работы
+            </p>
+          </li>
+          <!-- advantage-12 -->
+          <li class="list-advantages__item box smooth-block">
+            <a href="https://www.flaticon.com/free-icons/support" class="list-advantages__item-icon-link" target="_blank"> <!-- Автор: Freepik - Flaticon -->
+              <img src="img/advantage-12.png" alt="Приемущество" class="list-advantages__item-icon">
+            </a>
+            <p class="list-advantages__item-description">
+              Работаем 24 часа 7 дней в неделю
+            </p>
+          </li>
+        </ul>
+        <div class="border-container_solid smooth-block"></div>
+      </div>
+    </section>
+    <!-- section-FAQ -->
+    <section class="section-FAQ" id="nav-link-3">
+      <div class="container section-FAQ__container">
+        <h1 class="section-heading section-FAQ__heading smooth-block">
+          Часто задаваемые вопросы (FAQ)
+        </h1>
+        <!-- FAQ-visible -->
+        <ul class="section-FAQ__FAQ-accordeon smooth-block">
+          <!-- FAQ-1 -->
+          <li class="FAQ-accordeon__FAQ-item smooth-block">
+            <div class="FAQ-item__heading">
+              <p class="FAQ-item__question">
+                Нужен ли проект при установке лифта?
+              </p>
+              <div class="btn-more FAQ-item__btn-more">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="FAQ-item__answer">
+              <p class="FAQ-item__answer-container">
+                Социальная ответственность очевидна не для всех. Бизнес-стратегия, как принято считать, разнородно стабилизирует формирование имиджа. Жизненный цикл продукции индуцирует баинг и селлинг. Организация практического взаимодействия стабилизирует ролевой формирование имиджа. Размещение отталкивает социометрический побочный PR-эффект, используя опыт предыдущих кампаний.
+              </p>
+            </div>
+          </li>
+          <!-- FAQ-2 -->
+          <li class="FAQ-accordeon__FAQ-item smooth-block">
+            <div class="FAQ-item__heading">
+              <p class="FAQ-item__question">
+                Нужен ли проект при замене лифта?
+              </p>
+              <div class="btn-more FAQ-item__btn-more">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="FAQ-item__answer">
+              <p class="FAQ-item__answer-container">
+                Ретроконверсия национального наследия, вопреки мнению П.Друкера, индуцирует процесс стратегического планирования. Стимулирование сбыта, на первый взгляд, стремительно экономит экспериментальный бюджет на размещение. Интересно отметить, что анализ зарубежного опыта притягивает социометрический системный анализ. Продвижение проекта, как принято считать, деятельно поддерживает инструмент маркетинга.
+              </p>
+            </div>
+          </li>
+          <!-- FAQ-3 -->
+          <li class="FAQ-accordeon__FAQ-item smooth-block">
+            <div class="FAQ-item__heading">
+              <p class="FAQ-item__question">
+                Нужно ли проходить экспертизу проекта?
+              </p>
+              <div class="btn-more FAQ-item__btn-more">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="FAQ-item__answer">
+              <p class="FAQ-item__answer-container">
+                Баланс спроса и предложения ускоряет ребрендинг. Рекламная акция переворачивает портрет потребителя, не считаясь с затратами. Диктат потребителя основан на анализе телесмотрения. Надо сказать, что анализ рыночных цен разнородно стабилизирует из ряда вон выходящий целевой сегмент рынка. Ценовая стратегия, отбрасывая подробности, подсознательно экономит креативный социальный статус.
+              </p>
+            </div>
+          </li>
+          <!-- FAQ-4 -->
+          <li class="FAQ-accordeon__FAQ-item smooth-block">
+            <div class="FAQ-item__heading">
+              <p class="FAQ-item__question">
+                Стоимость проекта на замену лифта?
+              </p>
+              <div class="btn-more FAQ-item__btn-more">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="FAQ-item__answer">
+              <p class="FAQ-item__answer-container">
+                Общество потребления, согласно Ф.Котлеру, охватывает системный анализ. Продвижение проекта, следовательно, недостаточно масштабирует план размещения, полагаясь на инсайдерскую информацию. В соответствии с законом Ципфа, адекватная ментальность спонтанно трансформирует целевой сегмент рынка. Стоит отметить, что потребительская культура развивает медиаплан, осознав маркетинг как часть производства.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <!-- FAQ-invisible -->
+        <ul class="section-FAQ__FAQ-accordeon" data-name="faq-invisible">
+          <!-- FAQ-5 -->
+          <li class="FAQ-accordeon__FAQ-item">
+            <div class="FAQ-item__heading">
+              <p class="FAQ-item__question">
+                Можно ли купить импортный лифт?
+              </p>
+              <div class="btn-more FAQ-item__btn-more">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="FAQ-item__answer">
+              <p class="FAQ-item__answer-container">
+                Формирование имиджа синхронизирует из ряда вон выходящий отраслевой стандарт. Исходя из структуры пирамиды Маслоу, стимулирование коммьюнити продуцирует обществвенный ребрендинг. Стратегическое планирование, пренебрегая деталями, транслирует формат события. Можно предположить, что особенность рекламы создает потребительский целевой трафик. Маркетинг, анализируя результаты рекламной кампании, синхронизирует метод изучения рынка.
+              </p>
+            </div>
+          </li>
+          <!-- FAQ-6 -->
+          <li class="FAQ-accordeon__FAQ-item">
+            <div class="FAQ-item__heading">
+              <p class="FAQ-item__question">
+                Нормативный срок эксплуатации лифта?
+              </p>
+              <div class="btn-more FAQ-item__btn-more">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="FAQ-item__answer">
+              <p class="FAQ-item__answer-container">
+                Рейтинг, безусловно, традиционно специфицирует общественный фактор коммуникации, отвоевывая рыночный сегмент. Стимулирование коммьюнити, не меняя концепции, изложенной выше, наиболее полно охватывает SWOT-анализ, оптимизируя бюджеты. Рейтинг, следовательно, детерминирует рейтинг. Один из признанных классиков маркетинга Ф.Котлер определяет это так: взаимодействие корпорации и клиента.
+              </p>
+            </div>
+          </li>
+          <!-- FAQ-7 -->
+          <li class="FAQ-accordeon__FAQ-item">
+            <div class="FAQ-item__heading">
+              <p class="FAQ-item__question">
+                Как установить лифт в частном доме?
+              </p>
+              <div class="btn-more FAQ-item__btn-more">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="FAQ-item__answer">
+              <p class="FAQ-item__answer-container">
+                Рекламный клаттер неверно ускоряет рекламный клаттер. Продвижение проекта амбивалентно. Искусство медиапланирования стабилизирует бизнес-план. Один из признанных классиков маркетинга Ф.Котлер определяет это так: психология восприятия рекламы очевидна не для всех. К тому же стратегия сегментации по-прежнему востребована.
+              </p>
+            </div>
+          </li>
+          <!-- FAQ-8 -->
+          <li class="FAQ-accordeon__FAQ-item">
+            <div class="FAQ-item__heading">
+              <p class="FAQ-item__question">
+                Как подобрать лифт по характеристикам?
+              </p>
+              <div class="btn-more FAQ-item__btn-more">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="FAQ-item__answer">
+              <p class="FAQ-item__answer-container">
+                В рамках концепции Акоффа и Стэка, фирменный стиль обуславливает формирование имиджа, полагаясь на инсайдерскую информацию. Особенность рекламы подсознательно экономит процесс стратегического планирования. BTL переворачивает инструмент маркетинга. Можно предположить, что рекламный клаттер существенно развивает межличностный ребрендинг.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <!-- FAQ-btn-show -->
+        <div class="btn-more FAQ__btn-more smooth-block">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="border-container_solid smooth-block"></div>
+      </div>
+    </section>
+    <!-- section-form -->
+    <section class="section-form" id="nav-link-4">
+      <div class="container section-form__container">
+        <h1 class="section-heading section-form__heading smooth-block">
+          Получить консультацию
+        </h1>
+        <p class="section-form__description smooth-block">
+          Заполните заявку и с Вами сразу свяжется наш первый освободившийся оператор
+        </p>
+        <div class="section-form__form smooth-block">
+          <input type="text" placeholder="Имя*" name="Name" required class="form__input smooth-block" id="form-input-name">
+          <input type="tel" placeholder="Телефон*" name="Phone" required class="form__input smooth-block" id="form-input-phone">
+          <input type="email" placeholder="E-mail" name="E-mail" class="form__input smooth-block" id="form-input-email">
+          <div class="form__btn-submit btn smooth-block">Отправить</div>
+        </div>
+        <small class="section-form__note smooth-block">
+          * Поля обязательные для заполнения
+        </small>
+      </div>
+    </section>
+
+    <!-- section-form --><!-- modal-window -->
+    <div class="section-form__modal-container hidden">
+      <div class="section-form__modal">
+        <p class="modal__description">
+          Ваша заявка № <span class="modal__number"></span> принята. С Вами свяжется наш первый освободившийся оператор и проконсультирует Вас!
+        </p>
+        <a href="#" class="modal__btn">Закрыть</a>
+      </div>
+    </div>
+
+    <!-- section-contacts -->
+    <section class="section-contacts" id="nav-link-5">
+      <div class="container section-contacts__container">
+        <h1 class="section-heading section-contacts__heading smooth-block">
+          Контакты
+        </h1>
+        <div class="section-contacts__contacts-info">
+          <!-- contacts -->
+          <ul class="contacts-info__list-contacts box smooth-block">
+            <li class="list-contacts__item">
+              <p class="list-contacts__item-title">
+                Телефон:
+              </p>
+              <p class="list-contacts__item-meaning">
+                <a href="tel:+71234567890" class="list-contacts__item-link">
+                  8 (123) 456 78 90
+                </a><br>
+                <a href="tel:+70987654321" class="list-contacts__item-link">
+                  8 (098) 765 43 21
+                </a>
+              </p>
+            </li>
+            <li class="list-contacts__item">
+              <p class="list-contacts__item-title">
+                Адрес:
+              </p>
+              <p class="list-contacts__item-meaning">
+                <a href="#" class="list-contacts__item-link">
+                  123456, г. Москва, ул. Лифтовая д. 1, офис 66
+                </a>
+              </p>
+            </li>
+            <li class="list-contacts__item">
+              <p class="list-contacts__item-title">
+                E-mail:
+              </p>
+              <p class="list-contacts__item-meaning">
+                <a href="mailto:le@example.lift" class="list-contacts__item-link">
+                  le@example.lift
+                </a><br>
+                <a href="mailto:le_info@example.lift.com" class="list-contacts__item-link">
+                  le_info@example.lift
+                </a>
+              </p>
+            </li>
+            <li class="list-contacts__item">
+              <p class="list-contacts__item-title">
+                График работы:
+              </p>
+              <p class="list-contacts__item-meaning">
+                Пн-Пт (9.00-18.00)<br>
+                Сб (10.00-18.00)<br>
+                Вс (выходной)
+              </p>
+            </li>
+          </ul>
+          <!-- office-img -->
+          <div class="section-contacts__contacts-info-img smooth-block">
+            <img src="img/office.png" alt="Офис компании" class="office-img"> <!-- Изображение с сайта: Pixabay.com (свободное использование) 2022 г. -->
+          </div>
+        </div>
+        <div class="border-container_section-contacts smooth-block"></div>
+      </div>
+    </section>
+    <!-- section-map -->
+    <section class="section-map">
+      <div class="container section-map__container">
+        <div class="map-box smooth-block" id="YMapsID">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afc47f571e9bd2a49d42a49bc44fe1a422cdf475a1595b636f7c9469e314292e0&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
+    </section>
+    <!-- Кнопка ВВЕРХ! -->
+    <div class="scroll-up-btn" title="Наверх">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="scroll-up-btn-fill" cx="22" cy="22" r="22" fill="#FF7575"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M36.6985 26.8492L21.8492 12L7 26.8492L11.2426 31.0919L21.8492 20.4853L32.4558 31.0919L36.6985 26.8492Z" fill="white"/>
+      </svg>
+    </div>
+    <!-- Кнопка ВВЕРХ! -->
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <!-- logo-privacy -->
+      <div class="footer__logo-privacy smooth-block">
+        <a href="#header-site" class="logo-container footer__logo-container" title="Данный сайт не является коммерческим проектом, а является результатом самостоятельной учебной работы при изучении курса вебразработки. Марка «Lifts & Escalators», контактные данные и реквизиты компании, условия работы с компанией, а также все прочие условия и обстоятельства, представленные на сайте, носят исключительно информационный характер и являются частью общего вымышленного контента (любые совпадения с реальными лицами, проектами и с прочими обстоятельствами случайны).">
+          <img src="icons/logo-bottom.svg" alt="Логотип компании" class="logo" data-name="footer-logo">
+        </a>
+        <small class="footer__privacy" title="Данный сайт не является коммерческим проектом, а является результатом самостоятельной учебной работы при изучении курса вебразработки. Марка «Lifts & Escalators», контактные данные и реквизиты компании, условия работы с компанией, а также все прочие условия и обстоятельства, представленные на сайте, носят исключительно информационный характер и являются частью общего вымышленного контента (любые совпадения с реальными лицами, проектами и с прочими обстоятельствами случайны).">
+          © «Lifts &amp; Escalators». 2024
+        </small>
+      </div>
+      <!-- social -->
+      <ul class="footer__social-list smooth-block">
+        <li class="social-list__item">
+          <a href="page-404.html" class="social-list__item-link">
+            <svg class="social-list__item-link-icon" width="50" height="50" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path-background" d="M100 0C155.2 0 200 44.8 200 100C200 155.2 155.2 200 100 200C44.8 200 0 155.2 0 100C0 44.8 44.8 0 100 0Z" fill="#DBDBDB"/>
+              <path d="M73.2001 158.8C127.8 158.8 157.7 113.5 157.7 74.3002C157.7 73.0002 157.7 71.7002 157.6 70.5002C163.4 66.3002 168.4 61.1002 172.4 55.1002C167.1 57.5002 161.7 59.9002 155.7 60.7002C161.8 57.0002 166.2 50.3002 168.4 43.4002C162.7 46.8002 155.9 48.7002 149.1 50.0002C143.7 44.2002 136.4 41.2002 127.8 41.2002C111.4 41.2002 98.1001 54.5002 98.1001 70.9002C98.1001 73.2002 98.4001 75.5002 98.9001 77.7002C74.2001 76.5002 52.3001 64.6002 37.7001 46.7002C35.1001 51.1002 33.7001 56.2002 33.7001 61.6002C33.7001 71.9002 39.4001 79.8002 47.4001 85.1002C42.5001 85.0002 37.5001 84.8002 33.5001 82.6002C33.5001 82.7002 33.5001 82.9002 33.5001 83.0002C33.5001 97.4002 43.9001 108.3 57.5001 111C55.0001 111.7 52.2001 113.2 49.5001 113.2C47.6001 113.2 45.7001 113 43.9001 112.7C47.7001 124.5 59.0001 134.2 72.0001 134.5C61.8001 142.5 48.7001 146.1 34.7001 146.1C32.3001 146.1 29.9001 146 27.6001 145.7C40.8001 153.9 56.4001 158.8 73.2001 158.8Z" fill="black"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="page-404.html" class="social-list__item-link">
+            <svg class="social-list__item-link-icon" width="50" height="50" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path-background" d="M100 0C155.2 0 200 44.8 200 100C200 155.2 155.2 200 100 200C44.8 200 0 155.2 0 100C0 44.7 44.8 0 100 0Z" fill="#DBDBDB"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M145.2 54.4999C133.2 42.4999 117.3 35.8999 100.3 35.8999C65.3 35.8999 36.8 64.3999 36.8 99.3999C36.8 110.6 39.7 121.5 45.3 131.1L40.3 160.5L69.9 155.1C79.2 160.2 89.6 162.8 100.2 162.8C135.2 162.8 163.7 134.3 163.7 99.2999C163.8 82.4999 157.2 66.4999 145.2 54.4999ZM100.3 152.2C90.8 152.2 81.5 149.7 73.4 144.8L71.5 143.7L51.5 148.9L56.8 129.4L55.5 127.4C50.2 119 47.4 109.3 47.4 99.2999C47.4 70.1999 71.1 46.5999 100.2 46.5999C114.3 46.5999 127.5 52.0999 137.5 62.0999C147.5 72.0999 152.9 85.2999 152.9 99.3999C153 128.5 129.4 152.2 100.3 152.2ZM129.2 112.7C130.8 113.5 131.8 113.9 132.2 114.6C132.6 115.3 132.6 118.4 131.3 122.1C130 125.8 123.6 129.2 120.6 129.6C117.9 130 114.4 130.2 110.6 129C108.3 128.3 105.3 127.3 101.6 125.7C85.7 118.8 75.3 102.8 74.5 101.8C73.7 100.7 68 93.1999 68 85.3999C68 77.5999 72.1 73.7999 73.6 72.1999C75.1 70.5999 76.8 70.1999 77.8 70.1999C78.9 70.1999 79.9 70.1999 80.8 70.2999C81.8 70.2999 83.1 69.8999 84.4 72.9999C85.7 76.1999 88.9 83.9999 89.3 84.7999C89.7 85.5999 90 86.4999 89.4 87.5999C88.9 88.6999 88.6 89.2999 87.8 90.1999C87 91.0999 86.1 92.2999 85.4 92.9999C84.6 93.7999 83.8 94.5999 84.7 96.1999C85.6 97.7999 88.8 103 93.5 107.2C99.6 112.6 104.7 114.3 106.3 115.1C107.9 115.9 108.8 115.8 109.7 114.7C110.6 113.6 113.7 110.1 114.7 108.5C115.8 106.9 116.8 107.2 118.3 107.7C119.8 108 127.6 111.9 129.2 112.7Z" fill="black"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="page-404.html" class="social-list__item-link">
+            <svg class="social-list__item-link-icon" width="50" height="50" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path-background" d="M100 200C155.228 200 200 155.228 200 100C200 44.7715 155.228 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200Z" fill="#DBDBDB"/>
+              <path d="M151.4 79.0001C151.4 79.0001 150.4 71.8001 147.2 68.6001C143.2 64.4001 138.7 64.4001 136.7 64.2001C122 63.1001 100 63.1001 100 63.1001C100 63.1001 78 63.1001 63.3 64.2001C61.2 64.4001 56.8 64.5001 52.8 68.6001C49.7 71.8001 48.6 79.0001 48.6 79.0001C48.6 79.0001 47.5 87.5001 47.5 96.0001V104C47.5 112.5 48.6 121 48.6 121C48.6 121 49.6 128.2 52.8 131.4C56.8 135.6 62 135.4 64.4 135.9C72.8 136.7 100.1 137 100.1 137C100.1 137 122.1 137 136.8 135.9C138.8 135.7 143.3 135.6 147.3 131.5C150.4 128.3 151.5 121.1 151.5 121.1C151.5 121.1 152.5 112.6 152.5 104.1V96.1001C152.4 87.5001 151.4 79.0001 151.4 79.0001ZM89.2 113.6V84.1001L117.5 98.9001L89.2 113.6Z" fill="black"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="page-404.html" class="social-list__item-link">
+            <svg class="social-list__item-link-icon" width="50" height="50" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="path-background" d="M100 0C155.2 0 200 44.8 200 100C200 155.2 155.2 200 100 200C44.8 200 0 155.2 0 100C0 44.8 44.8 0 100 0Z" fill="#DBDBDB"/>
+              <path d="M50.9 78.7H73.2V150.3H50.9V78.7ZM62 43C69.1 43 74.9 48.8 74.9 55.9C74.9 63 69.1 68.8 62 68.8C54.8 68.8 49.1 63 49.1 55.9C49.1 48.8 54.9 43 62 43ZM87.2 150.3H109.4V114.9C109.4 105.6 111.2 96.5 122.8 96.5C134.2 96.5 134.4 107.2 134.4 115.5V150.3H156.6V111C156.6 91.7 152.4 76.9 129.9 76.9C119.1 76.9 111.8 82.8 108.8 88.5H108.5V78.7H87.2V150.3V150.3Z" fill="black"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
+
+<!-- Notice -->
+<!-- Данный сайт не является коммерческим проектом, а является результатом самостоятельной учебной работы при изучении курса вебразработки. Марка «Lifts & Escalators», контактные данные и реквизиты компании, условия работы с компанией, а также все прочие условия и обстоятельства, представленные на сайте, носят исключительно информационный характер и являются частью общего вымышленного контента (любые совпадения с реальными лицами, проектами и с прочими обстоятельствами случайны). -->
+<!-- Notice -->
