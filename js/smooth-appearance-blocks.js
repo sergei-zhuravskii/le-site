@@ -1,11 +1,19 @@
 
-// assign class (smooth-block) to img and text ii section-about
+// assign class (smooth-block) to any blocks
 if (window.innerWidth < 768) {
-  const companyImg = document.querySelector('.list-about__company-img');
-  const companyText = document.querySelector('.list-about__company-text');
+  const listServicesItems = document.querySelectorAll('.list-services__item');
+  const listServicesItemImgs = document.querySelectorAll('.list-services__item-img');
+  const listServicesItemHeadings = document.querySelectorAll('.list-services__item-heading');
+  const listServicesItemDescriptions = document.querySelectorAll('.list-services__item-description');
+  const listAboutCompanyImg = document.querySelector('.list-about__company-img');
+  const listAboutCompanyText = document.querySelector('.list-about__company-text');
 
-  companyImg.classList.add('smooth-block');
-  companyText.classList.add('smooth-block');
+  listServicesItems.forEach (item => item.classList.add('smooth-block'));
+  listServicesItemImgs.forEach (img => img.classList.add('smooth-block'));
+  listServicesItemHeadings.forEach (heading => heading.classList.add('smooth-block'));
+  listServicesItemDescriptions.forEach (heading => heading.classList.add('smooth-block'));
+  listAboutCompanyImg.classList.add('smooth-block');
+  listAboutCompanyText.classList.add('smooth-block');
 }
 
 // launch function for smooth appearance of blocks
