@@ -1274,6 +1274,13 @@ html {
 
 @media (min-width:1200px) {
 
+  /* section-contacts */
+
+  .contacts-info__list-contacts {
+    max-height: 457px;
+    min-height: 457px;
+  }
+
   /* Кнопка ВВЕРХ! */
 
   .scroll-up-btn {
@@ -1323,6 +1330,13 @@ html {
 
   .list-advantages__item:nth-child(-n+10) {
     margin-bottom: 30px;
+  }
+
+  /* section-contacts */
+
+  .contacts-info__list-contacts {
+    max-height: 457px;
+    min-height: 457px;
   }
 
   /* Кнопка ВВЕРХ! */
