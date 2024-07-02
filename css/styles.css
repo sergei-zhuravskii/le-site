@@ -263,10 +263,6 @@ html {
   transition: transform .1s;
 }
 
-/* .logo-container:hover .logo {
-  transform: scale(0.98);
-} */
-
 .section-description {
   font-size: 16px;
   line-height: 140%;
@@ -301,7 +297,7 @@ html {
 
 .smooth-block {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(35px);
   transition: transform 0.5s, opacity 0.5s;
 }
 
