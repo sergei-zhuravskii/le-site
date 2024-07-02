@@ -297,7 +297,7 @@ html {
 
 .smooth-block {
   opacity: 0;
-  transform: translateY(35px);
+  transform: translateY(40px);
   transition: transform 0.5s, opacity 0.5s;
 }
 
