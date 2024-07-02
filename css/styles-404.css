@@ -3,25 +3,10 @@
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
-  src: local(''),
-       url('/fonts/opensans-light-300.ttf') format('ttf');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/fonts/opensans-regular-400.ttf') format('ttf');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local(''),
-       url('/fonts/opensans-regular-italic-400.ttf') format('ttf');
+       url('/fonts/open-sans-v29-latin_cyrillic-regular.woff2') format('woff2'),
+       url('/fonts/open-sans-v29-latin_cyrillic-regular.woff') format('woff');
 }
 
 @font-face {
@@ -29,7 +14,8 @@
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('/fonts/opensans-medium-500.ttf') format('ttf');
+       url('/fonts/open-sans-v29-latin_cyrillic-500.woff2') format('woff2'),
+       url('/fonts/open-sans-v29-latin_cyrillic-500.woff') format('woff');
 }
 
 @font-face {
@@ -37,7 +23,8 @@
   font-style: normal;
   font-weight: 600;
   src: local(''),
-       url('/fonts/opensans-semi-bold-600.ttf') format('ttf');
+       url('/fonts/open-sans-v29-latin_cyrillic-600.woff2') format('woff2'),
+       url('/fonts/open-sans-v29-latin_cyrillic-600.woff') format('woff');
 }
 
 @font-face {
@@ -45,15 +32,8 @@
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('/fonts/opensans-bold-700.ttf') format('ttf');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: local(''),
-       url('/fonts/opensans-extra-bold-800.ttf') format('ttf');
+       url('/fonts/open-sans-v29-latin_cyrillic-700.woff2') format('woff2'),
+       url('/fonts/open-sans-v29-latin_cyrillic-700.woff') format('woff');
 }
 
 /* basic */
