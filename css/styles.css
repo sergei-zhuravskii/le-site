@@ -491,21 +491,21 @@ html {
 }
 
 .slide:nth-child(1) {
-  background: url(img/slide-1.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
+  background: url(/le-layout/img/slide-1.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .slide:nth-child(2) {
-  background: url(img/slide-2.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
+  background: url(/le-layout/img/slide-2.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .slide:nth-child(3) {
-  background: url(img/slide-3.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
+  background: url(/le-layout/img/slide-3.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
