@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 300;
   src: local(''),
-       url('/fonts/opensans-light-300.ttf') format('woff');
+       url('/fonts/opensans-light-300.ttf') format('ttf');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/fonts/opensans-regular-400.ttf') format('woff');
+       url('/fonts/opensans-regular-400.ttf') format('ttf');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-style: italic;
   font-weight: 400;
   src: local(''),
-       url('/fonts/opensans-regular-italic-400.ttf') format('woff');
+       url('/fonts/opensans-regular-italic-400.ttf') format('ttf');
 }
 
 @font-face {
@@ -29,7 +29,7 @@
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('/fonts/opensans-medium-500.ttf') format('woff');
+       url('/fonts/opensans-medium-500.ttf') format('ttf');
 }
 
 @font-face {
@@ -37,7 +37,7 @@
   font-style: normal;
   font-weight: 600;
   src: local(''),
-       url('/fonts/opensans-semi-bold-600.ttf') format('woff');
+       url('/fonts/opensans-semi-bold-600.ttf') format('ttf');
 }
 
 @font-face {
@@ -45,7 +45,7 @@
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('/fonts/opensans-bold-700.ttf') format('woff');
+       url('/fonts/opensans-bold-700.ttf') format('ttf');
 }
 
 @font-face {
@@ -53,7 +53,7 @@
   font-style: normal;
   font-weight: 800;
   src: local(''),
-       url('/fonts/opensans-extra-bold-800.ttf') format('woff');
+       url('/fonts/opensans-extra-bold-800.ttf') format('ttf');
 }
 
 /* basic */
