@@ -5,8 +5,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/le-layout/fonts/open-sans-v29-latin_cyrillic-regular.woff2') format('woff2'),
-       url('/le-layout/fonts/open-sans-v29-latin_cyrillic-regular.woff') format('woff');
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-regular.woff2') format('woff2'),
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-regular.woff') format('woff');
 }
 
 @font-face {
@@ -14,8 +14,8 @@
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('/le-layout/fonts/open-sans-v29-latin_cyrillic-500.woff2') format('woff2'),
-       url('/le-layout/fonts/open-sans-v29-latin_cyrillic-500.woff') format('woff');
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-500.woff2') format('woff2'),
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-500.woff') format('woff');
 }
 
 @font-face {
@@ -23,8 +23,8 @@
   font-style: normal;
   font-weight: 600;
   src: local(''),
-       url('/le-layout/fonts/open-sans-v29-latin_cyrillic-600.woff2') format('woff2'),
-       url('/le-layout/fonts/open-sans-v29-latin_cyrillic-600.woff') format('woff');
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-600.woff2') format('woff2'),
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-600.woff') format('woff');
 }
 
 @font-face {
@@ -32,8 +32,8 @@
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('/le-layout/fonts/open-sans-v29-latin_cyrillic-700.woff2') format('woff2'),
-       url('/le-layout/fonts/open-sans-v29-latin_cyrillic-700.woff') format('woff');
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-700.woff2') format('woff2'),
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-700.woff') format('woff');
 }
 
 /* basic */
@@ -491,21 +491,21 @@ html {
 }
 
 .slide:nth-child(1) {
-  background: url(/le-layout/img/slide-1.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
+  background: url(/le-site/img/slide-1.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .slide:nth-child(2) {
-  background: url(/le-layout/img/slide-2.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
+  background: url(/le-site/img/slide-2.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .slide:nth-child(3) {
-  background: url(/le-layout/img/slide-3.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
+  background: url(/le-site/img/slide-3.jpg); /* Изображение с сайта: Pixabay.com (свободное использование) 2022 г. */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
