@@ -141,10 +141,6 @@ html {
   cursor: pointer;
 }
 
-.btn-close:hover {
-  background-color: var(--red);
-}
-
 .btn-close span {
   position: absolute;
   top: 27px;
@@ -352,12 +348,6 @@ html {
   transition: color .2s ease, border .2s ease;
 }
 
-.menu__item-link:hover,
-.menu__item-link:active {
-  color: var(--dark-blue);
-  border-bottom: 1px solid var(--dark-blue);
-}
-
 /* header *//* header__burger-menu */
 
 .burger-menu-btn {
@@ -378,10 +368,6 @@ html {
   transform: translate(-50%, 0);
   transition: transform 0.3s;
   background-color: var(--dark-grey);
-}
-
-.burger-menu-btn:hover span {
-  background-color: var(--red);
 }
 
 .burger-menu-btn:active span {
@@ -742,9 +728,9 @@ html {
   transition: transform .3s ease;
 }
 
-.client-icon:hover {
+/* .client-icon:hover {
   transform: scale(1.08);
-}
+} */
 
 .list-about__clients-btn-container {
   display: flex;
@@ -804,7 +790,7 @@ html {
   text-align: center;
   font-size: 16px;
   line-height: 120%;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--dark-grey);
 }
 
@@ -855,21 +841,12 @@ html {
   height: 60px;
   font-size: 16px;
   line-height: 140%;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--dark-grey);
   background-color: var(--white);
   border-radius: 16px;
   cursor: pointer;
   transition: background-color .3s ease;
-}
-
-.FAQ-item__heading:hover > p,
-.FAQ-item__heading:active > p {
-  color: var(--dark-blue);
-}
-
-.FAQ-item__question_active {
-  color: var(--dark-blue);
 }
 
 .FAQ-item__question:hover + .btn-more {
@@ -957,10 +934,6 @@ html {
   transition: background-color .3s ease;
 }
 
-.form__input:hover {
-  background-color: var(--light-grey);
-}
-
 .form__btn-submit {
   display: flex;
   align-items: center;
@@ -976,11 +949,6 @@ html {
   border: none;
   cursor: pointer;
   transition: background-color 0.1s ease, color 0.1s ease;
-}
-
-.form__btn-submit:hover {
-  background-color: var(--light-red);
-  color: var(--white);
 }
 
 .form__btn-submit:active {
@@ -1080,15 +1048,6 @@ html {
   transition: background-color .3s ease;
 }
 
-.modal__btn:hover {
-  background-color: rgb(173, 0, 0);
-}
-
-.modal__btn:active {
-  background-color: rgb(173, 0, 0);
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, .5);
-}
-
 /* section-contacts */
 
 .section-contacts {
@@ -1109,7 +1068,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   min-width: 370px;
   max-width: 370px;
   min-height: fit-content;
@@ -1119,6 +1078,7 @@ html {
   display: flex;
   flex: 1 1 calc(100%/4);
   justify-content: space-between;
+  height: 100%;
   min-height: 90px;
 }
 
@@ -1129,9 +1089,9 @@ html {
 
 .list-contacts__item-title {
   flex: 1 1 40%;
-  font-size: 19px;
+  font-size: 16px;
   line-height: 120%;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--dark-grey);
 }
 
@@ -1142,21 +1102,14 @@ html {
 
 .list-contacts__item-meaning,
 .list-contacts__item-link {
-  font-size: 19px;
+  font-size: 16px;
   line-height: 140%;
   font-weight: 400;
   color: var(--dark-grey);
 }
 
 .list-contacts__item-link {
-  /* border-bottom: 1px solid transparent; */
   transition: color .3s ease, border .3s ease;
-}
-
-.list-contacts__item-link:hover,
-.list-contacts__item-link:active {
-  color: var(--dark-blue);
-  /* border-bottom: 1px solid var(--dark-blue); */
 }
 
 .border-container_section-contacts {
@@ -1232,14 +1185,8 @@ html {
   width: 50px;
 }
 
-
 .path-background{
   transition: fill .3s ease;
-}
-
-.social-list__item-link:hover .path-background,
-.social-list__item-link:active .path-background {
-  fill: var(--grey);
 }
 
 /* Кнопка ВВЕРХ! */
@@ -1255,7 +1202,7 @@ html {
   opacity: 0;
   border-radius: 22px;
   box-shadow: 0px 0px 10px 5px rgba(34, 60, 80, 0.3);
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
   cursor: pointer;
 }
 
@@ -1263,13 +1210,177 @@ html {
   opacity: 0.85;
 }
 
-.scroll-up-btn:active .scroll-up-btn-fill {
-  fill: red;
+/* @media *//* @media *//* @media *//* @media */
+/* @media *//* @media *//* @media *//* @media */
+/* @media *//* @media *//* @media *//* @media */
+
+@media (min-width:1200px) {   /* :hover and :active для desktop */
+
+  /* basic */
+
+  .btn-close:hover {
+    background-color: var(--red);
+  }
+
+  /* header *//* nav__menu */
+
+  .menu__item-link:hover {
+    color: var(--dark-blue);
+    border-bottom: 1px solid var(--dark-blue);
+  }
+
+  .menu__item-link:active {
+    opacity: 0.8;
+    border-bottom: 1px solid var(--dark-blue);
+  }
+
+  /* header *//* header__burger-menu */
+
+  .burger-menu-btn:hover span {
+    background-color: var(--red);
+  }
+
+  .burger-menu-btn:active span {
+    opacity: 0.8;
+  }
+
+  /* section-about *//* clients */
+
+  .client-icon:hover {
+    transform: scale(1.08);
+  }
+
+  /* section-FAQ */
+
+  .FAQ-item__heading:hover > p {
+    background-color: var(--light-grey);
+  }
+
+  .FAQ-item__heading:active > p {
+    opacity: 0.8;
+  }
+
+  /* section-form */
+
+  .form__input:hover {
+    background-color: var(--light-grey);
+  }
+
+  .form__btn-submit:hover {
+    background-color: var(--light-red);
+    color: var(--white);
+  }
+
+  .form__btn-submit:active {
+    background-color: var(--red);
+    color: var(--white);
+  }
+
+  /* section-form *//* modal-window */
+
+  .modal__btn:hover {
+    background-color: var(--dark-red);
+  }
+
+  .modal__btn:active {
+    background-color: var(--red);
+  }
+
+  .form__btn-submit:active {
+    background-color: var(--red);
+    color: var(--white);
+  }
+
+  /* section-contacts */
+
+  .list-contacts__item-link:hover {
+    color: var(--dark-blue);
+  }
+
+  .list-contacts__item-link:active {
+    opacity: 0.8;
+  }
+
+  /* footer */
+
+  .social-list__item-link:hover .path-background {
+    fill: var(--grey);
+  }
+
+  .social-list__item-link:active .path-background {
+    opacity: 0.8;
+  }
+
+  /* Кнопка ВВЕРХ! */
+
+  .scroll-up-btn:hover {
+    transform: scale(1.08);
+  }
+
+  .scroll-up-btn:active .scroll-up-btn-fill {
+    fill: red;
+  }
+
 }
 
-/* @media *//* @media *//* @media *//* @media */
-/* @media *//* @media *//* @media *//* @media */
-/* @media *//* @media *//* @media *//* @media */
+@media (max-width:1199.98px) {   /* :active для mobile */
+
+  /* basic */
+
+  .btn-close:active {
+    background-color: var(--red);
+  }
+
+  /* header *//* nav__menu */
+
+  .menu__item-link:active {
+    color: var(--dark-blue);
+  }
+
+  /* header *//* header__burger-menu */
+
+  .burger-menu-btn:active span {
+    background-color: var(--red);
+  }
+
+  /* section-FAQ */
+
+  .FAQ-item__heading:active > p {
+    background-color: var(--light-grey);
+  }
+
+  /* section-form */
+
+  .form__btn-submit:active {
+    background-color: var(--light-red);
+    color: var(--white);
+  }
+
+  /* section-form *//* modal-window */
+
+  .modal__btn:active {
+    background-color: var(--dark-red);
+  }
+
+  /* section-contacts */
+
+  .list-contacts__item-link:active {
+    color: var(--dark-blue);
+  }
+
+  /* footer */
+
+  .social-list__item-link:active .path-background {
+    fill: var(--grey);
+  }
+
+  /* Кнопка ВВЕРХ! */
+
+  .scroll-up-btn:active .scroll-up-btn-fill {
+    fill: red;
+  }
+
+}
 
 @media (min-width:1200px) {
 
@@ -1284,6 +1395,11 @@ html {
   .contacts-info__list-contacts {
     max-height: 457px;
     min-height: 457px;
+  }
+
+  .contacts-info__list-contacts {
+    padding-top: 30px;
+    padding-bottom: 0;
   }
 
   /* Кнопка ВВЕРХ! */
@@ -1350,6 +1466,11 @@ html {
     min-height: 457px;
   }
 
+  .contacts-info__list-contacts {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
   /* Кнопка ВВЕРХ! */
 
   .scroll-up-btn {
@@ -1403,7 +1524,7 @@ html {
   /* section-slider */
 
   .section-slider {
-    height: 380px;
+    height: 350px;
   }
 
   /* section-services */
@@ -1591,7 +1712,7 @@ html {
   /* section-slider */
 
   .section-slider {
-    height: 430px;
+    height: 300px;
   }
 
   /* section-services */
@@ -1749,12 +1870,12 @@ html {
   }
 
   .list-contacts__item-title {
-    flex: 1 1 25%;
+    flex: 1 1 30%;
     margin-right: 20px;
   }
 
   .list-contacts__item-meaning {
-    flex: 1 1 75%;
+    flex: 1 1 70%;
   }
 
   .section-contacts__contacts-info-img {
@@ -1839,7 +1960,7 @@ html {
   /* section-slider */
 
   .section-slider {
-    height: 430px;
+    height: 300px;
   }
 
   /* section-services */
@@ -2048,6 +2169,12 @@ html {
 }
 
 @media (max-width: 430px) {
+
+  /* section-slider */
+
+  .section-slider {
+    height: 250px;
+  }
 
   /* section-form *//* modal-window */
 
