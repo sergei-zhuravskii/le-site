@@ -19,14 +19,17 @@ function openModal() {
     const modalBtn = document.querySelector('.modal__btn');
     const modalNumber = document.querySelector('.modal__number');
     const formModal = document.querySelector('.section-form__modal');
+    const body = document.querySelector('body');
 
     modalContainer.classList.remove('hidden');
     modalNumber.textContent = Math.round(Math.random() * 500);
     modalBtn.addEventListener('click', closeModal);
     modalContainer.addEventListener('click', closeModal);
+    body.classList.add('body-scroll-off');
 
     function closeModal() {
       modalContainer.classList.add('hidden');
+      body.classList.remove('body-scroll-off');
     }
 
     const clientInfo = {
