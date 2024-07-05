@@ -1284,7 +1284,7 @@ html {
   }
 
   .modal__btn:active {
-    background-color: var(--red);
+    background-color: var(--grey);
   }
 
   .form__btn-submit:active {
