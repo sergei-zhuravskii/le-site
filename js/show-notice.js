@@ -1,12 +1,13 @@
 
-const headerLogoContainer = document.querySelector('.top-line__logo-container');
-const footerLogoContainer = document.querySelector('.footer__logo-container');
-const footerPrivacy = document.querySelector('.footer__privacy');
+// notice-links iniaialisation
+const noticeLinks = document.querySelectorAll('.notice-link');
 
-headerLogoContainer.addEventListener('click', openModal);
-footerLogoContainer.addEventListener('click', openModal);
-footerPrivacy.addEventListener('click', openModal);
+// event for click by links
+noticeLinks.forEach(link => {
+  link.addEventListener('click', openModal);
+})
 
+// function show notice
 function openModal() {
 
   const modalContainer = document.querySelector('.notice__modal-container');

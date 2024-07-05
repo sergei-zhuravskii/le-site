@@ -1,6 +1,5 @@
 
 const navLinks = document.querySelectorAll('[data-name="nav-link"]');
-const footerLogo = document.querySelector('[data-name="footer-logo"]');
 
 // Клик по ссылкам меню
 
@@ -16,14 +15,3 @@ navLinks.forEach((item) => {
     });
   });
 });
-
-// Клик по эмблеме в футере
-
-footerLogo.addEventListener('click', function(event) {
-  event.preventDefault();
-
-  document.querySelector('#header-site').scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-})
