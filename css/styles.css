@@ -284,10 +284,13 @@ html {
   border-bottom: var(--border-dotted-grey);
 }
 
-/* class="hidden" */
-
 .hidden {
   display: none;
+}
+
+.body-scroll-off {
+  overflow: hidden;
+  margin-right: 17px;
 }
 
 /* smooth appearance of blocks */
