@@ -1169,6 +1169,7 @@ html {
   line-height: 120%;
   font-weight: 400;
   color: var(--light-grey);
+  cursor: pointer;
 }
 
 .footer__social-list {
