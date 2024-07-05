@@ -971,9 +971,10 @@ html {
   outline-offset: -4px;
 }
 
-/* section-form *//* modal-window */
+/* section-form *//* notice *//* modal-window */
 
-.section-form__modal-container {
+.section-form__modal-container,
+.notice__modal-container{
   position: fixed;
   top: 0;
   right: 0;
@@ -996,7 +997,8 @@ html {
   }
 }
 
-.section-form__modal {
+.section-form__modal,
+.notice__modal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1045,7 +1047,6 @@ html {
   background-color: var(--dark-blue);
   border-radius: 4px;
   cursor: pointer;
-/*   transition: background-color .3s ease; */
 }
 
 /* section-contacts */
@@ -2176,9 +2177,10 @@ html {
     height: 250px;
   }
 
-  /* section-form *//* modal-window */
+  /* section-form *//* notice *//* modal-window */
 
-  .section-form__modal {
+  .section-form__modal,
+  .notice__modal {
     width: calc(100% - 30px);
   }
 
