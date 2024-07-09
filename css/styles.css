@@ -1,43 +1,39 @@
 /* fonts */
 
-/* open-sans-regular - latin_cyrillic */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/le-site/fonts/open-sans-v29-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/le-site/fonts/open-sans-v29-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-regular.woff2') format('woff2'), 
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-regular.woff') format('woff'); 
 }
 
-/* open-sans-500 - latin_cyrillic */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 500;
   src: local(''),
-       url('/le-site/fonts/open-sans-v29-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/le-site/fonts/open-sans-v29-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-500.woff2') format('woff2'), 
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-500.woff') format('woff'); 
 }
 
-/* open-sans-600 - latin_cyrillic */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   src: local(''),
-       url('/le-site/fonts/open-sans-v29-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/le-site/fonts/open-sans-v29-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-600.woff2') format('woff2'), 
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-600.woff') format('woff'); 
 }
 
-/* open-sans-700 - latin_cyrillic */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   src: local(''),
-       url('/le-site/fonts/open-sans-v29-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/le-site/fonts/open-sans-v29-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-700.woff2') format('woff2'),
+       url('/le-site/fonts/open-sans-v29-latin_cyrillic-700.woff') format('woff'); 
 }
 
 /* basic */
@@ -1040,16 +1036,26 @@ html {
 }
 
 .modal__btn {
-  display: inline-block;
-  padding: 18px 32px 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  width: 220px;
+  background-color: var(--blue);
+  outline: 1px solid var(--dark-grey);
+  outline-offset: -1px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.modal__btn span {
+  text-align: center;
   font-size: 16px;
   line-height: 100%;
   font-weight: 400;
-  text-transform: uppercase;
-  color: white;
-  background-color: var(--dark-blue);
-  border-radius: 4px;
-  cursor: pointer;
+  color: var(--dark-grey);
 }
 
 /* section-contacts */
