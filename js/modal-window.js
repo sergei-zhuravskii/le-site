@@ -16,20 +16,25 @@ function openModal() {
     alert('Не заполнены все необходимые поля ввода данных.');
   } else {
     const modalContainer = document.querySelector('.section-form__modal-container');
-    const modalBtn = document.querySelector('.modal__btn');
+    const formModalBtn = document.querySelector('#form-modal-btn');
     const modalNumber = document.querySelector('.modal__number');
     const formModal = document.querySelector('.section-form__modal');
     const body = document.querySelector('body');
 
     modalContainer.classList.remove('hidden');
     modalNumber.textContent = Math.round(Math.random() * 500);
-    modalBtn.addEventListener('click', closeModal);
-    modalContainer.addEventListener('click', closeModal);
+    formModalBtn.addEventListener('click', closeModal);
     body.classList.add('body-scroll-off');
+    if (window.innerWidth > 770) {
+      body.classList.add('body-offset');
+    }
 
     function closeModal() {
       modalContainer.classList.add('hidden');
       body.classList.remove('body-scroll-off');
+      if (window.innerWidth > 770) {
+        body.classList.remove('body-offset');
+      }
     }
 
     const clientInfo = {
