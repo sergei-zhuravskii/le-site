@@ -286,6 +286,9 @@ html {
 
 .body-scroll-off {
   overflow: hidden;
+}
+
+.body-offset {
   margin-right: 17px;
 }
 
