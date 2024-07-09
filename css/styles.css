@@ -2216,5 +2216,11 @@ html {
   .logo {
     height: 55px;
   }
+	
+  /* notice *//* modal-window */
+
+  .modal__btn {
+    width: 100%;
+  }
 
 }
