@@ -1287,17 +1287,22 @@ html {
     color: var(--white);
   }
 
-  /* section-form *//* modal-window */
+  /* notice *//* modal-window */
 
   .modal__btn:hover {
-    background-color: var(--dark-red);
+    background-color: var(--light-red);
+  }
+
+  .modal__btn:hover span {
+    background-color: var(--light-red);
+    color: var(--white);
   }
 
   .modal__btn:active {
-    background-color: var(--grey);
+    background-color: var(--red);
   }
 
-  .form__btn-submit:active {
+  .modal__btn:active span {
     background-color: var(--red);
     color: var(--white);
   }
@@ -1367,10 +1372,15 @@ html {
     color: var(--white);
   }
 
-  /* section-form *//* modal-window */
+  /* notice *//* modal-window */
 
   .modal__btn:active {
-    background-color: var(--dark-red);
+    background-color: var(--red);
+  }
+
+  .modal__btn:active span {
+    background-color: var(--red);
+    color: var(--white);
   }
 
   /* section-contacts */
