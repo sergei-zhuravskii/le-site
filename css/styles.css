@@ -2055,6 +2055,7 @@ html {
   .list-about__objects-img {
     margin-bottom: 30px;    
     width: 100%;
+    height: fit-content;
   }
 
   .list-about__objects-description {
