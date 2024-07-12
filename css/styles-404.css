@@ -157,8 +157,7 @@ main {
   font-weight: 400;
   color: var(--dark-grey);
   background-color: var(--blue);
-  outline: 1px solid var(--dark-grey);
-  outline-offset: -1px;
+  border: 1px solid var(--dark-grey);
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.1s ease, color 0.1s ease;
