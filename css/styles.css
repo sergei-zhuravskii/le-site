@@ -933,6 +933,7 @@ html {
   font-weight: 400;
   color: var(--dark-grey);
   border: none;
+  outline: none;
   background-color: var(--white);
   transition: background-color .3s ease;
 }
@@ -969,9 +970,9 @@ html {
   color: var(--dark-white);
 }
 
-.form__input_no-data {
-  outline: 2px solid var(--red);
-  outline-offset: -4px;
+.form__input_no-data::placeholder {
+  font-weight: 600;
+  color: var(--red);
 }
 
 /* section-form *//* notice *//* modal-window */
@@ -1045,8 +1046,7 @@ html {
   height: 60px;
   width: 220px;
   background-color: var(--blue);
-  outline: 1px solid var(--dark-grey);
-  outline-offset: -1px;
+  border: 1px solid var(--dark-grey);
   border-radius: 30px;
   cursor: pointer;
 }
