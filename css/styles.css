@@ -2068,6 +2068,10 @@ html {
   .list-about__objects-text_location {
     margin-bottom: 15px;
   }
+	
+  .object-img {
+    object-fit: contain;
+  }
 
   /* section-about *//* clients */
 
