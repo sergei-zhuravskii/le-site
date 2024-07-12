@@ -2068,7 +2068,7 @@ html {
   }
 	
   .object-img {
-    object-fit: none;
+    object-fit: cover;
   }
 
   /* section-about *//* clients */
