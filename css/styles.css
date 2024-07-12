@@ -1826,11 +1826,7 @@ html {
 
   .list-about__objects-container {
     height: fit-content;
-    max-height: 600px;
-  }
-
-  .list-about__objects-img {
-    height: 220px;
+    max-height: fit-content;
   }
 
   .object-img {
@@ -2047,7 +2043,7 @@ html {
   [data-name="objects-list-screen-less-576"] {
     display: flex;
     height: fit-content;
-    max-height: 600px;
+    max-height: fit-content;
   }
 
   .list-about__objects-list_less-576 {
@@ -2057,8 +2053,7 @@ html {
   }
 
   .list-about__objects-img {
-    margin-bottom: 30px;
-    max-height: 300px;
+    margin-bottom: 30px;    
     width: 100%;
   }
 
