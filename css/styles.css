@@ -649,7 +649,8 @@ html {
 }
 
 .object-img {
-  object-fit: none;
+  object-fit: cover;
+  height: 100%;
 }
 
 .list-about__objects-description {
