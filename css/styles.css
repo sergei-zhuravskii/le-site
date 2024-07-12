@@ -1265,11 +1265,11 @@ html {
   /* section-FAQ */
 
   .FAQ-item__heading:hover > p {
-    background-color: var(--light-grey);
+    color: var(--dark-red);
   }
 
   .FAQ-item__heading:active > p {
-    opacity: 0.8;
+    color: var(--red);
   }
 
   /* section-form */
@@ -1363,7 +1363,7 @@ html {
   /* section-FAQ */
 
   .FAQ-item__heading:active > p {
-    background-color: var(--light-grey);
+    color: var(--dark-red);
   }
 
   /* section-form */
