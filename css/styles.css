@@ -602,8 +602,8 @@ html {
 
 .list-about__objects-container {
   display: flex;
-  max-height: 370px;
-  min-height: 370px;
+/*   max-height: 370px;
+  min-height: 370px; */
   margin-bottom: 25px;
   padding-top: 35px;
   padding-bottom: 35px;
@@ -730,10 +730,6 @@ html {
 .client-icon {
   transition: transform .3s ease;
 }
-
-/* .client-icon:hover {
-  transform: scale(1.08);
-} */
 
 .list-about__clients-btn-container {
   display: flex;
