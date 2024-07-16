@@ -220,3 +220,17 @@ main {
   }
 
 }
+
+@media (min-width:992px) and (max-height:800px) {
+
+  /* main */
+
+  .section-404__img-404-wrapper {
+    height: 62%;
+  }
+
+  .section-404__description-404 {
+    height: 38%;
+  }
+
+}
